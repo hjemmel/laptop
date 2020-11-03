@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Welcome to the thoughtbot laptop script!
+# Welcome to the laptop script!
 # Be prepared to turn your laptop (or desktop, no haters here)
 # into an awesome development machine.
 
@@ -113,9 +113,10 @@ brew "rcm"
 brew "reattach-to-user-namespace"
 brew "autojump"
 brew "tmux"
-brew "vim"
 brew "watchman"
 brew "zsh"
+# AWS
+brew awscli
 # GitHub
 brew "gh"
 # Image manipulation
