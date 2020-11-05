@@ -102,7 +102,6 @@ fi
 fancy_echo "Updating Homebrew formulae ..."
 brew update --force # https://github.com/Homebrew/brew/issues/1151
 brew bundle --file=- <<EOF
-tap "thoughtbot/formulae"
 tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
 # Unix
@@ -110,17 +109,23 @@ brew "universal-ctags", args: ["HEAD"]
 brew "git"
 brew "openssl"
 brew "rcm"
-brew "reattach-to-user-namespace"
 brew "autojump"
-brew "tmux"
 brew "watchman"
 brew "zsh"
+cask "docker"
 # AWS
-brew awscli
+brew "awscli"
 # GitHub
 brew "gh"
 # Image manipulation
 brew "imagemagick"
+# General
+cask "google-chrome"
+cask "slack"
+# Dev Tools
+cask "visual-studio-code"
+cask "tableplus"
+cask "firefox-developer-edition"
 # Programming language prerequisites and package managers
 brew "libyaml" # should come after openssl
 brew "coreutils"
